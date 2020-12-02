@@ -1,0 +1,13 @@
+#Gradle
+.gradle/
+build/
+releases/
+
+#Eclipse
+bin/
+.project
+.settings/
+.classpath
+
+#MC Server
+server/

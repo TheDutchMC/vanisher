@@ -1,6 +1,15 @@
 name: @name@
-main: @groupId@.@name@.@name@
+main: @groupId@.@name@
 version: @version@
 author: @author@
 api-version: @apiVersion@
+commands:
+  vanish:
+    description: Vanisher commands
+    aliases: [v]
+    usage: /<command>
 
+permissions:
+  vanisher.use:
+    default: op
+    description: Vanisher command

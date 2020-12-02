@@ -1,18 +1,17 @@
-package nl.thedutchmc.BaseBukkitPlugin;
+package nl.thedutchmc.vanisher;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class BaseBukkitPlugin extends JavaPlugin {
+public class Vanisher extends JavaPlugin {
 
-	public static BaseBukkitPlugin INSTANCE;
+	public static Vanisher INSTANCE;
 	
 	@Override
 	public void onEnable() {
 		INSTANCE = this;
 		
-		ConfigurationHandler configHandler = new ConfigurationHandler();
-		configHandler.loadConfig();
-	
+		getCommand("vanish").setExecutor(new CommandHandler(this));
+		
 	}
 	
 	@Override

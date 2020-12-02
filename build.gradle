@@ -8,7 +8,7 @@ plugins {
 allprojects {
 
 	version = pluginVersion
-	group = pluginGroup	
+	group = pluginGroup
 
 	sourceCompatibility = 1.8
 	targetCompatibility = 1.8
